@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Detail</title>
+</head>
+<body>
+    <h1>{{ course.name }}</h1>
+    <p>Course: {{ course.description }}</p>
+    <a href="{% url 'course_update' course.id %}">Edit</a>
+    <a href="{% url 'course_list' %}">Back to List</a>
+</body>
+</html>
